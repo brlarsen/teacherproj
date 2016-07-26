@@ -16,8 +16,8 @@ Sandwich :: Sandwich()
 {
     
     this->breadCount = 2;
-    this->filling = "peanut butter and sriracha";
-    this->name = "Spicy PB";
+    this->filling = "Cheese";
+    this->name = "Grilled Cheese";
 
 }
 
@@ -33,4 +33,25 @@ int Sandwich :: getBreadCount()
 void Sandwich :: setBreadCount(int breadCount)
 {
     this->breadCount = breadCount;
+}
+
+string Sandwich :: getFilling()
+{
+    return filling;
+
+}
+
+void Sandwich :: setFilling(string filling)
+{
+    this->filling = filling;
+}
+
+string Sandwich :: getName()
+{
+    return name;
+}
+
+void Sandwich :: setName(string name)
+{
+    this->name = name;
 }

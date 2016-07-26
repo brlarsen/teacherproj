@@ -29,7 +29,7 @@ public:
     void setFilling(string filling);
     string getFilling();
     string getName();
-    void SetName(string name);
+    void setName(string name);
 
 };
 

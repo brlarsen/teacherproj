@@ -8,26 +8,21 @@
 
 #include <iostream>
 #include <string>
+#include "Sandwich.h"
 
 using namespace std;
 
 int main()
 {
-    // insert code here...
-    cout << "Hello, World!" << endl;
-    double myFraction;
-    cout << myFraction << endl;
-    myFraction = 3.15;
-    cout << myFraction << endl;
-    int myFavoriteNumber;
-    cout << myFavoriteNumber << endl;
-    cin >> myFavoriteNumber;
-    cout << myFavoriteNumber << endl;
-    bool myBoolean = true;
-    cout << myBoolean;
-    string myWords;
-    myWords = "What's up bruh!";
-    cout << myWords << endl;
-    
+    Sandwich mySandwich;
+    cout << mySandwich.getName() <<endl;
+    cout << "Let's rename my sandwich" << endl;
+    cout << "Type in a new name" << endl;
+    string tempName;
+//    cin >> tempName;
+    getline(cin, tempName);
+    mySandwich.setName(tempName);
+    cout << "The new name is: " << mySandwich.getName() << endl;    
     return 0;
+
 }
