@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include "Sandwich.h"
 
-//Constructor
+//constructor
 
 
 Sandwich :: Sandwich()
@@ -21,7 +21,13 @@ Sandwich :: Sandwich()
 
 }
 
-//end Constructors
+//end constructors
+
+//destructor
+Sandwich :: ~Sandwich()
+{
+    //Delete all instances of new memory.
+}
 
 int Sandwich :: getBreadCount()
 {
